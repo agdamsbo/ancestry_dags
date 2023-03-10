@@ -76,6 +76,7 @@ closed <-
 
 ```{r}
 # Merged table
-tbl_merge(list(crude,collider,closed))
+tbl_merge(list(crude,collider,closed),
+          tab_spanner = c("**Crude**", "**Colliders**", "**All closed**"))
 ```
 

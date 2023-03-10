@@ -3,7 +3,7 @@ Title: DAGs ancestry quantification
 Version: 0.0.1
 Authors@R: 
     person("Andreas Gammelgaard", "Damsbo", , "agdamsbo@clin.au.dk", role = c("aut", "cre"),
-           comment = c(ORCID = ""))
+           comment = c(ORCID = "0000-0002-7559-1154"))
 Description: Package with simple functions to quantify DAGs in R. 
     Based on course mmaterial from PhD course on Directed Acyclic 
     Graphs (DAG) at AU.

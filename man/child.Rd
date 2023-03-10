@@ -24,6 +24,6 @@ pop <- 10000
 child(
   baserisk = 0.1,
   por = c(1.2, 0.8),
-  parent = ancestor.multi(population = pop, prev = 0.2, n = 2)
+  parent = ancestor(population = pop, prev = 0.2, n = 2)
 )
 }
