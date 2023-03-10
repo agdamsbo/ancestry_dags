@@ -1,0 +1,81 @@
+---
+title: "How-to"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How-to}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  message=FALSE
+)
+```
+
+# Example use
+
+```{r setup}
+library(ancestryDAGs)
+```
+
+## Excercise 2 from the course
+
+Here I will just show a proposed solution to excercise 2 in to course material.
+
+![Model DAG the excercise is based on. Source: C. Wu](images/dag.png){width="90%" fig-align="center"}
+
+```{r}
+##ancestors are defined and sent to global environment
+a <- ancestor(population = 10000, prev = c(0.1,0.1),anc.names = c("U1","U2"))
+list2env(a,envir = .GlobalEnv)
+```
+
+
+```{r}
+##child E
+E <- child(baserisk = 0.05, por=5,parent = list(U1) )
+
+##child M
+M <- child(baserisk = 0.05, por=c(5,5),parent = list(U1,U2))
+
+##child O
+O <- child(baserisk = 0.05, por=c(1.5,5),parent = list(E,U2))
+```
+
+```{r}
+##transform it as the data frame
+dat <- data.frame(U1, U2, E, M, O)
+```
+
+
+```{r}
+# gtsummary is used for nice tables
+require(gtsummary)
+
+#Crude analysis
+crude <-
+  glm(O ~ E, 
+      family = binomial(link = 'logit'), data = dat) |> 
+  tbl_regression(exponentiate = TRUE)
+
+#collider bias
+collider <-
+  glm(O ~ E + M, 
+      family = binomial(link = 'logit'), data = dat) |> 
+  tbl_regression(exponentiate = TRUE)
+
+#close all open paths
+closed <-
+  glm(O ~ E + M + U1 + U2,
+      family = binomial(link = 'logit'), data = dat) |> 
+  tbl_regression(exponentiate = TRUE)
+```
+
+```{r}
+# Merged table
+tbl_merge(list(crude,collider,closed))
+```
+

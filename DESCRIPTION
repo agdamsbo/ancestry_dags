@@ -17,3 +17,10 @@ Collate:
     'child.R'
 Imports: 
     stats
+Suggests: 
+    gtsummary,
+    knitr,
+    rmarkdown,
+    spelling
+VignetteBuilder: knitr
+Language: en-US
