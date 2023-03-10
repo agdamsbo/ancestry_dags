@@ -9,7 +9,7 @@
 Package with simple functions to quantify DAGs in R. Based on course mmaterial from PhD course on Directed Acyclic Graphs (DAG) at AU.
 }
 \author{
-\strong{Maintainer}: Andreas Gammelgaard Damsbo \email{agdamsbo@clin.au.dk} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Andreas Gammelgaard Damsbo \email{agdamsbo@clin.au.dk}
 
 }
 \keyword{internal}

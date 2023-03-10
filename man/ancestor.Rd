@@ -2,21 +2,30 @@
 % Please edit documentation in R/ancestor.R
 \name{ancestor}
 \alias{ancestor}
-\title{Calculate Ancestor Probability}
+\title{Simulate multiple ancestors}
 \usage{
-ancestor(population = 10000, prev = 0.1)
+ancestor(population, prev, n = 1, anc.names = NULL)
 }
 \arguments{
-\item{population}{The population size.}
+\item{population}{Population}
 
-\item{prev}{The previous probability.}
+\item{prev}{Prevalence of outcome in ancestor(s). If length is 1, the
+value is reused for all.}
+
+\item{n}{Number of ancestors to simulate}
+
+\item{anc.names}{Names of the ancestors (optional). If supplied, n is ignored.}
 }
 \value{
-A vector of probabilities.
+List of ancestor objects
 }
 \description{
-Calculates the probability of an ancestor given a population size and previous probability.
+Simulates multiple ancestors given population size and
+prevalence(s).
 }
 \examples{
-ancestor(population = 10000, prev = 0.1)
+pop <- 10000
+ancestor(population = pop, prev = 0.1, n = 3)
+ancestor(population = pop, prev = c(0.1, 0.3, 0.2),
+anc.names = c("anc2", "anc3", "anc4"))
 }

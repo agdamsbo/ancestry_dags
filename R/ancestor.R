@@ -3,6 +3,8 @@
 #' @param population The population size.
 #' @param prev The previous probability.
 #' @return A vector of probabilities.
+#' @importFrom stats rbinom
+#' @export
 #'
 #' @examples
 #' ancestor.s(population = 10000, prev = 0.1)
@@ -40,5 +42,6 @@ ancestor <- function(population, prev, n = 1, anc.names = NULL) {
     })
     names(l) <- anc.names
   }
+  class(l) <- c("ancestorList",class(l))
   l
 }

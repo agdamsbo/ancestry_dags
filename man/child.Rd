@@ -9,12 +9,12 @@ child(baserisk, por, parent)
 \arguments{
 \item{baserisk}{A numeric vector containing the base risk}
 
-\item{por}{A list containing the odds ratios}
+\item{por}{A vector containing the odds ratios}
 
 \item{parent}{A list containing the parent's risk factors}
 }
 \value{
-A vector of probabilities of a child
+A vector of prevalence of a child
 }
 \description{
 Calculate the probability of a child with given parameters
@@ -23,7 +23,7 @@ Calculate the probability of a child with given parameters
 pop <- 10000
 child(
   baserisk = 0.1,
-  por = list(1.2, 0.8),
+  por = c(1.2, 0.8),
   parent = ancestor.multi(population = pop, prev = 0.2, n = 2)
 )
 }
