@@ -3,7 +3,6 @@
 #' @param por A list containing the odds ratios
 #' @param parent A list containing the parent's risk factors
 #' @return A vector of probabilities of a child
-#' @include ancestor.r
 #' @export
 #'
 #' @examples
