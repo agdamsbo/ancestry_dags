@@ -37,3 +37,5 @@ child <- function(baserisk, por, parent) {
   rbinom(length(parent[[1]]), 1, probp1)
 }
 
+
+

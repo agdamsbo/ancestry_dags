@@ -1,4 +1,17 @@
-url: ~
+url: https://agdamsbo.github.io/ancestryDAGs/
 template:
   bootstrap: 5
 
+navbar:
+  title: "ancestryDAG"
+  type: inverse
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "How-to"
+      href: articles/How-to.html
+    - text: "Reference"
+      href: "reference/"
+  right:
+    - icon: fa-github
+      href: https://github.com/agdamsbo/ancestryDAGs
