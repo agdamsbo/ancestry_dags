@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/404.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>/articles/How-to.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/articles/index.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/articles/How-to.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/articles/index.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/authors.html</loc>
   </url>
   <url>
-    <loc>/reference/ancestor.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/index.html</loc>
   </url>
   <url>
-    <loc>/reference/ancestor.s.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/reference/ancestor.html</loc>
   </url>
   <url>
-    <loc>/reference/ancestryDAGs-package.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/reference/ancestor.s.html</loc>
   </url>
   <url>
-    <loc>/reference/child.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/reference/ancestryDAGs-package.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/reference/child.html</loc>
+  </url>
+  <url>
+    <loc>https://agdamsbo.github.io/ancestryDAGs/reference/index.html</loc>
   </url>
 </urlset>

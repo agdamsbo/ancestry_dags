@@ -6,12 +6,12 @@ navbar:
   title: "ancestryDAG"
   type: inverse
   left:
-    - text: "Home"
-      href: index.html
     - text: "How-to"
       href: articles/How-to.html
+    - text: "Contributor Code of Conduct"
+      href: CODE_OF_CONDUCT.html
     - text: "Reference"
-      href: "reference/"
+      href: reference/index.html
   right:
     - icon: fa-github
       href: https://github.com/agdamsbo/ancestryDAGs
